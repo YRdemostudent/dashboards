@@ -1,0 +1,15 @@
+<h1>Convert to AED</h1>
+
+<p>Go <a href="/forex">back</a>.</p>
+
+<ul>
+<% @array_of_symbols.each do |a_symbol|%>
+<li>
+<a href="/<%=@from_symbol%>/<%= a_symbol %>">
+  Convert one <%=@from_symbol%> to <%= a_symbol %> to...
+  </a>
+</li>
+<% end %>
+</li>
+
+</ul>
